@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+main {
+    margin: 1em auto;
+    width: 94%;
+    max-width: 380px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header {
+    margin: 1em 0;
+    text-align: center;
+    color: rgb(60, 60, 60);
+}
+
+.main-title {
+    margin: 0.85em 0;
+    font-weight: 200;
+}
+
+.span-title {
+    display: block;
+    font-weight: 700;
+}
+
+.main-info {
+    margin: 0 auto;
+    width: 90%;
+    color: gray;
+    line-height: 1.75em;
+}
+
+.card {
+    margin: 2em auto;
+    padding: 1.15em 1.75em;    
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(60, 60, 60);
+    border-radius: 8px;
+    box-shadow: 0 8px 10px 0 rgba(26, 36, 123, 0.35);
+}
+
+.card-supervisor {
+    border-top: 4px solid rgb(0, 225, 255);
+}
+
+.card-team-builder {
+    border-top: 4px solid red;
+}
+
+.card-karma {
+    border-top: 4px solid orange;
+}
+
+.card-calculator {
+    border-top: 4px solid rgb(71, 159, 241);
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.card-info {
+    margin: 0.5em 0;
+    font-size: 0.9rem;
+    line-height: 1.75em;
+    color: gray;
+}
+
+.card-img {
+    margin-top: 1.75em;
+    width: 50px;
+    align-self: flex-end;
+}
+
+@media (min-width: 800px) {
+    main {
+        max-width: 780px;
+    }
+    .main-title {
+        font-size: 1.85rem;
+    }
+    .main-info {
+        max-width: 34em
+    }
+    .two-cards {
+        display: flex;
+    }
+}
+
+@media (min-width: 1150px) {
+    main {
+        margin: 0 auto;
+        min-width: 850px;
+        max-width: unset;
+    }
+    .cards-container {
+        display: flex;
+        justify-content: center;
+    }
+    .cards-section {
+        display: flex;
+        align-items: center;
+    }
+    .card {
+        margin: 2em 1em;
+        padding: 1.45em 1.75em;
+        height: 225px;
+    }
+    .two-cards {
+        display: unset;
+    }
+}
